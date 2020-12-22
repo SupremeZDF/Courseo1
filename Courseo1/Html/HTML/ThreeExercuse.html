@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/layui/layui.js"></script>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../JS/select2.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        /* 去掉 ul 标签点 */
+        
+        ul {
+            list-style: none;
+            overflow: hidden;
+        }
+        /* ul:hover {
+            background-color: indianred;
+        } */
+        
+        li {
+            margin: 0px 20px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+            padding: 0px 15px;
+        }
+        
+        li:hover {
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="../Image/187108cc07bfd6588cee5ffc279dfe73.jpg" alt="dasd" title="提示符"> -->
+    <ul>
+        <li>京航船</li>
+        <li>刑法</li>
+        <li>事件</li>
+    </ul>
+
+    <div style="width: 100px;height: 100px;background-color: red;"></div>
+    <div style="width: 100px;height: 100px;background-color:green;"></div>
+
+    <form method="GET" action="">
+        userName:<input type="text" value="" name="name"><br> passWord:
+        <input type="password" value="" name="word">
+        <input type="submit" value="submit">
+
+        <input placeholder="请输入关键字" type="text">
+
+        <input checked="checked" type="radio">
+        <input type="checkbox" value="" checked>
+
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <canvas></canvas>
+    </form>
+
+    <del>sss</del> 删除标签 价格
+    <address>sss</address> 地址标签
+    <strong>sss</strong> 加粗
+    <em>sss</em> 斜体标签
+
+    <button onclick="u()">dedead</button>
+
+    <a href="https://www.baidu.com" target="dadankss">dasda</a>
+    <a></a>
+
+    <script>
+        var s = document.getElementsByName("word")[0];
+
+        function u() {
+            console.log(s.value);
+
+            s.onfocus = function(e) {
+                e.clientX;
+            }
+        }
+    </script>
+</body>
+
+</html>

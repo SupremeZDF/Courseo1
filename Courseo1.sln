@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courseo1", "Courseo1\Courseo1.csproj", "{D7095E9C-4CFC-4CB9-96BB-61510300041F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courseo1", "Courseo1\Courseo1.csproj", "{D7095E9C-4CFC-4CB9-96BB-61510300041F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Course01", "Course01", "{580DB373-1425-437B-B5DD-0A98AD0C7DF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7095E9C-4CFC-4CB9-96BB-61510300041F} = {580DB373-1425-437B-B5DD-0A98AD0C7DF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {702AB6A7-FB56-4EAA-A430-897DC46E674E}
