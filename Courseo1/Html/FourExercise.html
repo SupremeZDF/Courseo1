@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/jquery-3.3.1.min.js"></script>
+    <script src="../JS/layui/layui.js"></script>
+    <script src="../CSS/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link href="../JS/layui/css/layui.css" rel="stylesheet" />
+    <link href="../CSS/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS/select2.min.css" rel="stylesheet" />
+    <script src="../JS/select2.min.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <a onmouseover="showInform(this,event);" onmouseout="hiddenInform()">
+        警告消息2312312312321
+        </a>
+    <!-- <span id="ysDelete" style="position: relative;;background-color:rgb(243, 218, 180); padding: 3px 8px;border-radius: 7px;top: 100px;left: 100px;font-size: 12px; ">撒大苏打实打实的</span> -->
+    <script>
+        //显示悬浮层 
+        function showInform(sthis, event) {
+            // console.log(sthis);
+            console.log(event);
+            var x = event.clientX;
+            // console.log(sthis.offsetLeft);
+            // console.log(sthis.offsetTop);
+            var y = event.clientY;
+
+            console.log(x);
+            console.log(y);
+
+            var xx = Math.ceil(x) + 10;
+            var yy = Math.ceil(y) + 6;
+
+            console.log(xx);
+            console.log(yy);
+
+            //var str = '<span id="ysDelete " style="position:absolute;background-color:rgb(238, 207, 161); padding: 3px 8px;border-radius: 7px;margin-left: ' + xx + 'px;margin-top: ' + yy + 'px; ">' + sthis.text + '</span>';
+
+            // var dom = document.querySelector("body");
+
+            var d = document.createElement("span").innerText;
+
+            // d.id = "ysDelete";
+            // d.style.position = "relative";
+            // //d.style.display = "inline-block";
+            // d.style.backgroundColor = "rgb(238, 207, 161)";
+            // d.style.paddingLeft = "8px";
+            // d.style.paddingTop = "3px";
+            // d.style.paddingRight = "8px";
+            // d.style.paddingBottom = "3px";
+            // d.style.borderRadius = "7px";
+            // d.style.marginLeft = xx + "px";
+            // d.style.marginTop = yy + "px";
+            // d.innerText = sthis.text;
+            // d.style.fontSize = "12px";
+
+            var str = '<span id="ysDelete" style="position: absolute;background-color:rgb(243, 218, 180); padding: 3px 8px;border-radius: 7px;left: ' + xx + 'px;top: ' + yy + 'px;font-size: 12px; ">撒大苏打实打实的</span>';
+
+            var dom = $(str);
+
+            $("body").append(dom);
+
+            //dom.appendChild(d);
+
+            //dom.innerHTML = dom.innerHTML + str;
+            //document.getElementById("inform ").style.display = 'block';
+            //document.getElementById("inform ").css("display ","block "); 
+        }
+        //隐藏悬浮层 
+        function hiddenInform() {
+            // var doms = document.querySelector("body");
+            // var dom = document.getElementById("ysDelete");
+            //doms.removeChild(dom);
+
+            $("#ysDelete").remove();
+            //var informDiv = document.getElementById('inform').text;
+            // var x = event.clientX;
+            // var y = event.clientY;
+            // var divx1 = informDiv.offsetLeft;
+            // var divy1 = informDiv.offsetTop;
+            // var divx2 = informDiv.offsetLeft + informDiv.offsetWidth;
+            // var divy2 = informDiv.offsetTop + informDiv.offsetHeight;
+            // if (x < divx1 || x > divx2 || y < divy1 || y > divy2) {
+            //     document.getElementById('inform').style.display = 'none';
+            // }
+
+        }
+    </script>
+</body>
+
+</html>
